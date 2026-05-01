@@ -5,49 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Item | Vali</title>
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/cadastro_item.css">
 </head>
 
 <body>
-    <main id="main-cadastro-item">
+    <main id="main-crude-item">
         
-        <!-- Container Principal (Azul) -->
-        <div id="container-login-cadastro">
-            
-            <!-- Seção de Login -->
-            <section id="secao-login">
-                <h2>Bem-vindo de volta</h2>
-                <p>Acesse sua conta agora.</p>
+        <div id="container-crude-item">
+            <!-- Seção de Cadastro  de Item-->
+            <section id="secao-crude-item">
+                <h2>Insira o ID ou uma palavra chave.</h2>
                 
-                <form id="form-login">
-                    <input type="text" id="usuario_login" name="usuario_login" placeholder="Usuário" required>
-                    <input type="password" id="senha_login" name="senha_login" placeholder="Senha" required>
-                    <button type="submit">Entrar</button>
+                <form id="form-editar-cadastro-item">
+                    <input type="text" id="busca-item-para-edicao" name="busca-item-para-edicao" placeholder="ID ou Palavra Chave" required>
+                    <button type="submit">Editar</button>
                 </form>
-            </section>
 
-            <!-- Seção de Cadastro -->
-            <section id="secao-cadastro">
-                <h2>Criar Conta</h2>
-                <p>Cadastre-se para começar.</p>
-                
-                <form id="form-cadastro">
-                    <input type="text" id="usuario_cadastro" name="usuario_cadastro" placeholder="Usuário" required>
-                    <input type="email" id="email_cadastro" name="email_cadastro" placeholder="E-mail" required>
-                    <input type="password" id="senha_cadastro" name="senha_cadastro" placeholder="Senha" required>
-                    <button type="submit">Cadastrar</button>
-                </form>
+                <div id="linha-divisoria-crude">
+                    <hr>
+                </div>
+
+                <form id="form-cadastrar-novo-item">
+                    <button type="submit">Cadastrar Novo Local</button>
+                </form>                
             </section>
         </div>
 
         <!-- Elemento Visual -->
         <img src="assets/img/garoto_com_celular_sem_fundo_adobe.png" 
-             id="imagem-login-cadastro" 
+             id="imagem-item-cadastro" 
              alt="Ilustração de um garoto usando celular">
 
     </main>
 
-    <footer>
-        <p>footer aqui</p>
-    </footer>
+    <script src="js/footer.js"></script>
 </body>
 </html>
